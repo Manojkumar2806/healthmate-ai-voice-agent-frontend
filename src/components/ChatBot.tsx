@@ -15,7 +15,7 @@ interface Message {
   isThinking?: boolean;
 }
 
-const API_BASE = "healthmate-ai-voice-agent-backend-production.up.railway.app";
+const API_BASE = "http://localhost:8000";
 
 const ChatBot: React.FC<ChatBotProps> = ({ onBack }) => {
   const [messages, setMessages] = useState<Message[]>([]);
